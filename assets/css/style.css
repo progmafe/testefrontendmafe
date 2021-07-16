@@ -2,53 +2,82 @@ body {
     font-family: "Roboto";
   /*  background-image: linear-gradient(90deg, #09052f 0%, #311d5e 100%); */
   }
+header{
 
-.header{
-    width: 780px;
-    height: 79px;
-    font-size: 14px;
-    letter-spacing: 1px;
-    line-height: 24px;
-    color: #ffffff;
-    font-weight: 300;
-    text-align: center;
 }
 .topo{
-   /* background-image: url('../images/primeiraimagem.png'); */
-    background-image: linear-gradient(to bottom, rgb(24 30 64 / 52%), rgb(6 29 64 / 73%)), url(../images/primeiraimagem.png);   , url('../images/primeiraimagem.png');
+    background-image: linear-gradient(to bottom, rgb(24 30 64 / 52%), rgb(6 29 64 / 73%)), url(../images/primeiraimagem.png);
+    background-repeat: round;
+}
+.topo-content{
+    padding: 10px 50px;
 }
 
 .header h3{
     font-size: 30px;
     font-weight: 250;
 }
-.navheader{
-    display: flex;
-    justify-content: space-around;
-    color: #ffffff;
-}
 .navheaderspan {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+}
+.navheaderspan img{
+    margin-right: 20px;
+}
+.navheaderspan h3{
+    margin-top: 10px;
+    color: #ffffff;
+}
+.navheaderspan h3 :hover{
+    color: #00e0d0;
 }
 
 .apresentacao{
     font-size: 14px;
     letter-spacing: 0px;
-    padding-left: 126px;
-    padding-right: 126px;
+    padding-left: 120px;
+    padding-right: 120px;
     color: #ffffff;
     text-align: center;
 }
+@media only screen and (max-width: 600px) {
+    .apresentacao {
+        padding-left: 0;
+        padding-right: 0;
+    }
+  }
 .apresentacao-mid{
     min-height: 600px;
     display: flex;
     align-items: center;
+}
+.apresentacao-mid a{
+    color: #00e0d0;
+    border: 1px solid #00e0d0;
+}
+.apresentacao-mid-btn a :active {
+    background-color: #000;
+}
+.apresentacao-mid-btn :active{
+    background-color: #000;
 }
 .apresentacao h1{
     font-size: 32px;
     letter-spacing: 0px;
     font-weight: 900;
     font-family: "Playfair Display";
+}
+
+.produtos{
+    background-color: #ffffff;
+}
+.produtos h1{
+    font-size: 32px;
+}
+.produtos-title{
+    margin-bottom: 30px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
