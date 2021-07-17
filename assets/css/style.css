@@ -1,12 +1,9 @@
 body {
     font-family: "Roboto";
-  /*  background-image: linear-gradient(90deg, #09052f 0%, #311d5e 100%); */
-  }
-header{
-
+    box-shadow: none;
 }
 .topo{
-    background-image: linear-gradient(to bottom, rgb(24 30 64 / 52%), rgb(6 29 64 / 73%)), url(../images/primeiraimagem.png);
+    background-image: linear-gradient(to right, #0c1f65f5 -95%, #311d5ed1 69%), url(../images/primeiraimagem.png);
     background-repeat: round;
 }
 .topo-content{
@@ -24,12 +21,14 @@ header{
 .navheaderspan img{
     margin-right: 20px;
 }
+
 .navheaderspan h3{
+    font-family: "Roboto";
     margin-top: 10px;
-    color: #ffffff;
+    color: #4aa3cc;
 }
-.navheaderspan h3 :hover{
-    color: #00e0d0;
+.navheaderspan h3:hover{
+    color: #ffffff;
 }
 
 .apresentacao{
@@ -46,6 +45,14 @@ header{
         padding-right: 0;
     }
   }
+
+.apresentacao-title-underline{
+    background-image: url(../images/Separator.png);
+    width: 50px;
+    height: 1px;
+    background-color: #00dfcf;
+    align-self: center;
+}
 .apresentacao-mid{
     min-height: 600px;
     display: flex;
@@ -55,12 +62,14 @@ header{
     color: #00e0d0;
     border: 1px solid #00e0d0;
 }
-.apresentacao-mid-btn a :active {
-    background-color: #000;
+.apresentacao-mid-btn a{
+    font-size: 16px;
+    color: #00e0d0;
+    font-weight: 400;
+    font-family: "Hammersmith One";
+    text-align: center;
 }
-.apresentacao-mid-btn :active{
-    background-color: #000;
-}
+
 .apresentacao h1{
     font-size: 32px;
     letter-spacing: 0px;
@@ -70,6 +79,7 @@ header{
 
 .produtos{
     background-color: #ffffff;
+    margin-bottom: 50px;
 }
 .produtos h1{
     font-size: 32px;
@@ -80,4 +90,117 @@ header{
     display: flex;
     flex-direction: column-reverse;
 }
-
+.produtos-title img{
+    text-align: center;
+}
+.produtos-title-underline{
+    background-image: url(../images/Separator.png);
+    width: 50px; 
+    height: 2px; 
+    background-color: #413d4b; 
+    align-self: center;
+}
+.produtos-grid{
+    margin-top: 70px;
+}
+@media only screen and (max-width: 600px) {
+    .produtos-grid {
+        margin-top: 20px;
+    }
+  }
+.produtos-grid i{
+    color:#00e0d0;
+}
+.produtos-grid i:hover{
+    color:#4aa3cc
+}
+.produtos-bloco{
+    padding: 23px 21px 24px;
+    
+}
+.produtos-bloco h4{
+    text-transform: uppercase;
+    margin: 20px;
+    color: #413d4b;
+    font-size: 14px;
+    font-weight: 900;
+}
+.produtos-bloco p{
+    letter-spacing: 1px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #333333;
+    font-weight: 300;
+}
+.carrossel{
+    background-image: linear-gradient(to right, #0c1f65f5 -95%, #311d5ed1 69%), url(../images/segundaimagem.png);
+    background-repeat: round;
+    /* background-image: linear-gradient(#09052f , #311d5e)), url(../images/segundaimagem.png); */
+}
+.carrossel-content{
+    padding:88px 100px; 
+    min-height: 600px;
+}
+.item-carrossel{
+    width: 130px;
+    display: inline;
+}
+.item-carrossel {
+    font-size: 17px;
+    color: #ffffff;
+    font-family: "Playfair Display";
+}
+.item-carrossel{
+    letter-spacing: 3px;
+    line-height: 26px;
+    font-weight: 400;
+}
+.depoimento{
+    display: flex;
+    flex-direction: column;
+    font-family: "Playfair Display";
+    color: #ffffff;
+    line-height: 22px;
+}
+.depoimento i{
+    margin-bottom: 35px;
+}
+.depoimentospan{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+.owl-carousel .owl-stage {
+    display: flex;
+  }
+.owl-carousel .owl-item img {
+    width: 80px;
+  }
+.depoimento-nome{
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    margin-bottom: 0px;
+    margin-top: 25px;
+}
+.depoimento-cargo{
+    font-size: 13px;
+    font-weight: 300;
+}
+.depoimento-nav{
+    display: flex;
+    color: #ffff;
+    justify-content: space-around;
+    margin-top: -64px;
+    font-size: 40px;
+    padding: 0px 178px;
+    background-color: transparent;
+}
+@media only screen and (max-width: 600px) {
+    .owl-prev {
+        display: none;
+    }
+    .owl-next {
+        display: none;
+    }
+  }
