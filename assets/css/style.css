@@ -170,11 +170,18 @@ body {
 .carrossel{
     background-image: linear-gradient(to right, #0c1f65f5 -95%, #311d5ed1 69%), url(../images/segundaimagem.png);
     background-repeat: round;
+    background-size: cover;
 }
 
 .carrossel-content{
     padding:88px 100px; 
     min-height: 600px;
+}
+
+@media only screen and (max-width: 600px) {
+    .carrossel-content {
+        padding: 71px 17px;
+    }
 }
 
 .item-carrossel{
@@ -305,6 +312,7 @@ body {
 .rodape{
     background-image: linear-gradient(to right, #0c1f65f5 -95%, #311d5ed1 69%), url(../images/terceiraimagem.png);
     background-repeat: round;
+    background-size: cover;
 }
 
 .rodape-content{
@@ -327,16 +335,22 @@ body {
     align-items: center;
     text-transform: uppercase;
     font-size: 30px;
-    letter-spacing: 1px;
-    line-height: 26px;
 }
 
 .title-rodape-2{
+    display: flex;
+    align-items: center;
     color:#4aa3cc;
     text-transform: lowercase;
     font-size: 30px;
     margin-left: 15px;
+    margin-top:-10px;
 }
+
+.img-rodape-2{
+    margin-top:-15px;
+}
+
 
 .rodape-content h3:hover{
     color: #ffffff;
@@ -361,7 +375,6 @@ body {
         margin: 9px 13px 72px 0px;
     }
 }
-
 
 .paragraf-local{
     white-space: pre-line;
