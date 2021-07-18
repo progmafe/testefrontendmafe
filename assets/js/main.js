@@ -16,7 +16,7 @@ $(document).ready(function(){
             },
             600:{
                 items:1,
-                nav:true,
+                nav:true
             }
         }
     });
